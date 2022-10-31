@@ -1,0 +1,127 @@
+
+/*generic style*/
+@font-face {
+    font-family: Norse;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+:root {
+    font-family: sans-serif;
+}
+
+/*logo and hero image style*/
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(247, 247, 247);
+}
+
+#hero_image {
+  width: 35vw;
+  background: url(images/green-leaf.jpg) no-repeat;
+  background-size: cover;
+  color: rgb(255, 252, 246);
+}
+
+.logo_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-family: Norse;
+    background-color: rgba(14, 14, 14, .6);
+    padding: 15px 0;
+    position: relative;
+    top: 20%;
+}
+
+#hero_image div:last-child{
+    font-size: calc(8px + 1vh);
+    position: relative;
+    top: 70vh;
+    text-align: center;
+}
+
+#logo {
+    height: 120px;
+    width: auto;
+}
+
+/*form part style*/
+
+#form_part {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+    width: 65vw;
+}
+
+.first_paragraph {
+    padding: calc(20px + 3vh) calc(20px + 3vh) 0;
+}
+
+.first_paragraph > p {
+    font-weight: 700;
+    margin-bottom: 1.5vh;
+}
+
+.form_elements {
+    display: flex;
+    flex-flow: row wrap;
+    gap: calc(15px + 1vh);
+    background-color: rgb(255, 254, 249);
+    padding: 20px calc(20px + 3vh);
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 4px;
+    font-size: 0.7rem;
+    width: 40%;
+}
+
+.form_title {
+    width: 100%;
+}
+
+.last_paragraph {
+    padding: calc(20px + 3vh);
+}
+
+input {
+    border: 1px solid rgba(214, 214, 214, .3);
+    border-radius: 6px;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(24, 116, 255);
+    box-shadow: 6px 6px 6px rgba(202, 202, 202, 0.3);
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input[type=submit]{
+    background-color: rgb(83, 133, 37);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(247, 247, 247);
+    padding: 8px;
+    margin-bottom: 4vh;
+}
+
+.last_paragraph span {
+    color: rgb(83, 133, 37);
+    font-weight: 500;
+}
